@@ -37,7 +37,7 @@ const App = () => {
         {/* Image */}
         <img
           src={mySvg}
-          alt="taskDone"
+          alt="Image_TaskDone"
           className="lg:w-96 sm:ml-2 lg:ml-28 pic"
         />
       </div>
@@ -45,7 +45,7 @@ const App = () => {
       <div className="second w-full h-full lg:mx-5 px-5 rounded">
         {/* Task List Title */}
         <h1 className="text-3xl text-yellow-300 mb-10 mt-5 font-bold">
-          Task List 📃
+          {tasks.length === 0 ? "Don't have any Task today?" : "Task List 📃"}
         </h1>
         {/* Task List */}
         <ul className="list-none">

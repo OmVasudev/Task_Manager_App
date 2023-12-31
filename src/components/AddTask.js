@@ -9,7 +9,6 @@ export default function AddTask({ tasks, setTasks }) {
 
   // Function to handle adding a new task
   const handleAddTask = () => {
-    // Check if the new task is not empty
     if (newTask.trim() !== "") {
       // Add the new task to the tasks array
       setTasks([...tasks, { name: newTask, completed: false }]);
